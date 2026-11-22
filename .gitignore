@@ -4,6 +4,7 @@
 *.changes
 *.buildinfo
 *.tar.*
+db/*.lock
 debian/.debhelper/
 debian/files
 debian/*.substvars

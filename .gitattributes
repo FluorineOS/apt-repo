@@ -1,0 +1,5 @@
+# Preserve signed metadata and package bytes exactly across Windows checkouts.
+dists/** -text
+pool/** -text
+db/** -text
+fluorineos-archive-keyring.asc -text

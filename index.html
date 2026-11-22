@@ -2,68 +2,86 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
 <title>FluorineOS APT Repository</title>
 <style>
-  body { background: #000000; color: #e2e8f0; font-family: "JetBrains Mono", monospace; margin: 0; padding: 2rem; }
+  :root {
+    color-scheme: dark;
+    background: #000000;
+    color: #e2e8f0;
+    font-family: "JetBrains Mono", "Cascadia Code", monospace;
+    line-height: 1.65;
+  }
+  body { margin: 0; padding: 2rem 1rem; }
+  main { max-width: 860px; margin: 0 auto; }
   a { color: #b4f03a; text-decoration: none; }
   a:hover { text-decoration: underline; }
-  h1 { color: #b4f03a; border-bottom: 1px solid #1c2229; padding-bottom: 0.5rem; }
-  code { background: #0a0d10; color: #b4f03a; padding: 0.1rem 0.4rem; border: 1px solid #1c2229; font-family: "JetBrains Mono", monospace; }
-  pre { background: #0a0d10; border: 1px solid #1c2229; padding: 1rem; overflow-x: auto; }
-  .card { background: #0a0d10; border: 1px solid #1c2229; padding: 1.5rem; margin-top: 1rem; }
-  .key-fingerprint { color: #b4f03a; font-weight: bold; }
+  h1, h2 { color: #b4f03a; }
+  h1 { border-bottom: 1px solid #1c2229; padding-bottom: 0.6rem; }
+  code, pre { background: #0a0d10; border: 1px solid #1c2229; }
+  code { color: #b4f03a; padding: 0.1rem 0.35rem; }
+  pre { overflow-x: auto; padding: 1rem; }
+  .card { background: #0a0d10; border: 1px solid #1c2229; margin: 1.25rem 0; padding: 1.25rem; }
+  .muted { color: #6e7681; }
+  .fingerprint { overflow-wrap: anywhere; }
+  @media (min-width: 640px) { body { padding: 3rem 1.5rem; } .card { padding: 1.5rem; } }
 </style>
 </head>
 <body>
+<main>
 <h1>FluorineOS APT Repository</h1>
-<p>Official signed APT package repository for FluorineOS.</p>
-<p>Repository URL: <code>https://fluorineos.github.io/apt-repo</code><br>
-Distribution: <code>trixie</code><br>
-Components: <code>main</code><br>
-Architectures: <code>amd64</code>, <code>all</code></p>
+<p>Official signed package repository for FluorineOS on Debian 13 (trixie).</p>
 
-<div class="card">
-<h2>Adding the Repository</h2>
-<p>Install the <code>fluorine-keyring</code> package, then add the source:</p>
-<pre>
-# Install the keyring package first
-sudo apt-get install fluorine-keyring
+<section class="card">
+<h2>Repository details</h2>
+<ul>
+<li>URL: <code>https://fluorineos.github.io/apt-repo</code></li>
+<li>Suite: <code>trixie</code></li>
+<li>Component: <code>main</code></li>
+<li>Architecture: <code>amd64</code></li>
+</ul>
+</section>
 
-# Add the repository source
-echo "Types: deb
-URIs: [https://fluorineos.github.io/apt-repo]
+<section class="card">
+<h2>Set up the repository</h2>
+<p>First install GnuPG and download the archive public key. Confirm the displayed fingerprint is exactly the value shown below before installing it.</p>
+<pre><code>sudo apt update
+sudo apt install -y curl gpg
+curl -fsSLo /tmp/fluorineos-archive-keyring.asc https://fluorineos.github.io/apt-repo/fluorineos-archive-keyring.asc
+gpg --show-keys --with-fingerprint /tmp/fluorineos-archive-keyring.asc
+# Confirm the fingerprint below, then install the key:
+gpg --dearmor --output /tmp/fluorineos-archive-keyring.gpg /tmp/fluorineos-archive-keyring.asc
+sudo install -D -m 0644 /tmp/fluorineos-archive-keyring.gpg /usr/share/keyrings/fluorineos-archive-keyring.gpg
+sudo tee /etc/apt/sources.list.d/fluorineos.sources &gt; /dev/null &lt;&lt;'EOF'
+Types: deb
+URIs: https://fluorineos.github.io/apt-repo
 Suites: trixie
 Components: main
 Architectures: amd64
-Signed-By: /usr/share/keyrings/fluorineos-archive-keyring.gpg" | sudo tee /etc/apt/sources.list.d/fluorineos.sources
-
-# Refresh the package index
+Signed-By: /usr/share/keyrings/fluorineos-archive-keyring.gpg
+EOF
 sudo apt update
-</pre>
-</div>
+sudo apt install fluorine-keyring</code></pre>
+<p>After setup, <code>fluorine-keyring</code> maintains the archive keyring and source definition.</p>
+</section>
 
-<div class="card">
-<h2>Archive Keyring</h2>
-<p>Public key fingerprint: <span class="key-fingerprint">DCF8D117141143E65F930B55206E495540B36253</span></p>
-<p>Download the armored public key:</p>
-<pre>
-wget https://fluorineos.github.io/apt-repo/fluorineos-archive-keyring.asc
-</pre>
-<p>Or install via the <code>fluorine-keyring</code> package which places the keyring at:</p>
-<pre>
-/usr/share/keyrings/fluorineos-archive-keyring.gpg
-</pre>
-</div>
+<section class="card">
+<h2>Archive signing key</h2>
+<p>Fingerprint: <code class="fingerprint">DCF8D117141143E65F930B55206E495540B36253</code></p>
+<p><a href="https://fluorineos.github.io/apt-repo/fluorineos-archive-keyring.asc">Download the armored public key</a>.</p>
+</section>
 
-<div class="card">
+<section class="card">
 <h2>Packages</h2>
 <ul>
-<li><code>fluorine-desktop</code> - Hyprland 0.55+ native Lua configuration, Waybar, Kitty, Fuzzel, SwayNotificationCenter themes, hypridle/hyprlock OLED burn-in protection, flr-* CLI utilities</li>
-<li><code>fluorine-artwork</code> - AMOLED SVG wallpapers, Plymouth boot splash, fastfetch configuration, Calamares installer branding</li>
-<li><code>fluorine-keyring</code> - APT archive keyring and source configuration</li>
+<li><code>fluorine-desktop</code> - Hyprland configuration, desktop themes, and command-line utilities.</li>
+<li><code>fluorine-artwork</code> - Wallpapers, Plymouth boot splash, and installer branding.</li>
+<li><code>fluorine-keyring</code> - Archive keyring and APT source configuration.</li>
 </ul>
-</div>
+</section>
 
-<p>Maintained by <a href="https://github.com/FluorineOS">FluorineOS</a> | <a href="https://github.com/FluorineOS/fluorine">Main repository</a></p>
+<p class="muted">Maintained by <a href="https://github.com/FluorineOS">FluorineOS</a>. See the <a href="https://github.com/FluorineOS/fluorine">main project repository</a>.</p>
+</main>
 </body>
 </html>

@@ -1,0 +1,5 @@
+Component: main
+Origin: FluorineOS
+Label: FluorineOS APT Repository
+Architecture: amd64
+Description: Official packages for FluorineOS 0.0.1+

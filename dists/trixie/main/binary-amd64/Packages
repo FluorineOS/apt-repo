@@ -1,0 +1,64 @@
+Package: fluorine-artwork
+Version: 0.0.1
+Architecture: all
+Maintainer: gowthvm <gowthamgkofficial@gmail.com>
+Installed-Size: 57
+Priority: optional
+Section: misc
+Filename: pool/main/f/fluorine-artwork/fluorine-artwork_0.0.1_all.deb
+Size: 8684
+SHA256: 51580beb8e9a658f7a18c57f2acc54a2736257e073755fb3781d6c129741cf04
+SHA1: 16cdb5d16fbf53718acade47b4c6fdd293e98521
+MD5sum: 6005a3b57536cf0e3477a03cc2b997e8
+Description: FluorineOS artwork, wallpapers, Plymouth theme, and Calamares branding
+ This package installs the visual assets for FluorineOS 0.0.1, including:
+ .
+ - AMOLED 3840x2160 SVG wallpapers for the OLED Void design language
+ - Plymouth boot splash theme using the script plugin
+ - fastfetch ASCII logo and JSONC configuration
+ - Calamares installer branding, QML slideshow, and stylesheet
+
+Package: fluorine-desktop
+Version: 0.0.1
+Architecture: all
+Maintainer: gowthvm <gowthamgkofficial@gmail.com>
+Installed-Size: 41
+Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, jq, libnotify-bin
+Priority: optional
+Section: misc
+Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.0.1_all.deb
+Size: 7780
+SHA256: b79379e13494a1095457a11a97255dcdb2e3dcca30360c66631ed7db0911dc7c
+SHA1: 3e992831112913604bee42160c9500913543008a
+MD5sum: 6ba710269211e3d727a608085983f422
+Description: FluorineOS AMOLED Hyprland desktop environment
+ FluorineOS desktop configuration for Hyprland 0.55 and later, built on a
+ pure AMOLED black base with a reactive lime accent.
+ .
+ The package installs the native Lua compositor configuration, Waybar,
+ Kitty, Fuzzel, and SwayNotificationCenter themes, hypridle and hyprlock
+ OLED burn-in protection, and the flr-shot, flr-keys, and flr-doctor
+ command line utilities.
+ .
+ Configuration is installed into /etc/skel/.config so that newly created
+ users receive the FluorineOS desktop on first login.
+
+Package: fluorine-keyring
+Version: 0.0.1
+Architecture: all
+Maintainer: gowthvm <gowthamgkofficial@gmail.com>
+Installed-Size: 14
+Priority: optional
+Section: misc
+Filename: pool/main/f/fluorine-keyring/fluorine-keyring_0.0.1_all.deb
+Size: 1752
+SHA256: 48b63fce937f0427c4e3d4f3f3141c147f50294f44e5568880bca8bbd31add4b
+SHA1: a8279401f5e92de50b9ee2c0eb67c69e7072faed
+MD5sum: 6395d1f70b1c4292946830724f011f74
+Description: FluorineOS APT archive keyring and source configuration
+ This package installs the FluorineOS archive GPG keyring and APT source
+ definition for the official FluorineOS package repository.
+ .
+ - /usr/share/keyrings/fluorineos-archive-keyring.gpg
+ - /etc/apt/sources.list.d/fluorineos.sources
+
