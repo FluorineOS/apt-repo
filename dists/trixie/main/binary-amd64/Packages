@@ -19,26 +19,26 @@ Description: FluorineOS artwork, wallpapers, Plymouth theme, and Calamares brand
  - Calamares installer branding, QML slideshow, and stylesheet
 
 Package: fluorine-desktop
-Version: 0.0.1
+Version: 0.0.3
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
 Installed-Size: 41
 Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, jq, libnotify-bin
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.0.1_all.deb
-Size: 7780
-SHA256: b79379e13494a1095457a11a97255dcdb2e3dcca30360c66631ed7db0911dc7c
-SHA1: 3e992831112913604bee42160c9500913543008a
-MD5sum: 6ba710269211e3d727a608085983f422
+Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.0.3_all.deb
+Size: 8004
+SHA256: 1f085ffc03cdc13d10cd1d4ea620992fc47236633a1f5c588e77ec871600e102
+SHA1: 6a1d3156093657d1058a72a55b8a1fd2adc8f4ce
+MD5sum: 1d31b4e08dbce5d9fa53886c7ecc1a48
 Description: FluorineOS AMOLED Hyprland desktop environment
  FluorineOS desktop configuration for Hyprland 0.55 and later, built on a
  pure AMOLED black base with a reactive lime accent.
  .
  The package installs the native Lua compositor configuration, Waybar,
  Kitty, Fuzzel, and SwayNotificationCenter themes, hypridle and hyprlock
- OLED burn-in protection, and the flr-shot, flr-keys, and flr-doctor
- command line utilities.
+ OLED burn-in protection, and the flr-shot, flr-keys, and flr-doctor command
+ line utilities.
  .
  Configuration is installed into /etc/skel/.config so that newly created
  users receive the FluorineOS desktop on first login.
