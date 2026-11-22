@@ -1,0 +1,7 @@
+Origin: FluorineOS
+Label: FluorineOS APT Repository
+Codename: trixie
+Architectures: amd64
+Components: main
+Description: Official packages for FluorineOS 0.0.1+
+SignWith: DCF8D117141143E65F930B55206E495540B36253
