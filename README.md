@@ -62,4 +62,6 @@ are ignored.
 
 ## License
 
+Released under the MIT License. See [LICENSE](LICENSE) for the full text.
+
 Source: [FluorineOS/apt-repo](https://github.com/FluorineOS/apt-repo)
