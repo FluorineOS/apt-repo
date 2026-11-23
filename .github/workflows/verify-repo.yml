@@ -1,0 +1,79 @@
+name: Verify repository
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-repo-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify-repo:
+    name: Verify signed metadata and package digests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    container:
+      image: debian:trixie
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Install verification tools
+        run: |
+          set -euo pipefail
+          apt-get update
+          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+            ca-certificates \
+            gnupg
+
+      - name: Verify the signed metadata
+        run: |
+          set -euo pipefail
+          export GNUPGHOME
+          GNUPGHOME="$(mktemp -d)"
+          gpg --batch --quiet --import fluorineos-archive-keyring.asc
+          gpg --batch --verify dists/trixie/Release.gpg dists/trixie/Release
+          gpg --batch --verify dists/trixie/InRelease
+          printf 'Release.gpg and InRelease verified\n'
+
+      - name: Verify every indexed package
+        run: |
+          set -euo pipefail
+          index="dists/trixie/main/binary-amd64/Packages"
+          if [ ! -s "${index}" ]; then
+            printf '%s is missing or empty\n' "${index}" >&2
+            exit 1
+          fi
+          mapfile -t entries < <(awk '
+            /^Filename: / { file = $2 }
+            /^SHA256: / { if (file != "") { print file " " $2; file = "" } }
+          ' "${index}")
+          if [ "${#entries[@]}" -eq 0 ]; then
+            printf 'no package entries found in %s\n' "${index}" >&2
+            exit 1
+          fi
+          for entry in "${entries[@]}"; do
+            file="${entry%% *}"
+            want="${entry##* }"
+            if [ ! -f "${file}" ]; then
+              printf 'indexed package is missing: %s\n' "${file}" >&2
+              exit 1
+            fi
+            have="$(sha256sum "${file}" | cut -d' ' -f1)"
+            if [ "${have}" != "${want}" ]; then
+              printf 'digest mismatch: %s\n' "${file}" >&2
+              exit 1
+            fi
+            printf 'ok %s\n' "${file}"
+          done
+          printf 'verified %d package(s)\n' "${#entries[@]}"
