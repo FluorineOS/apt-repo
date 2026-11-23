@@ -19,29 +19,31 @@ Description: FluorineOS artwork, wallpapers, Plymouth theme, and Calamares brand
  - Calamares installer branding, QML slideshow, and stylesheet
 
 Package: fluorine-desktop
-Version: 0.0.3
+Version: 0.1.0
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 41
-Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, jq, libnotify-bin
+Installed-Size: 51
+Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.0.3_all.deb
-Size: 8004
-SHA256: 1f085ffc03cdc13d10cd1d4ea620992fc47236633a1f5c588e77ec871600e102
-SHA1: 6a1d3156093657d1058a72a55b8a1fd2adc8f4ce
-MD5sum: 1d31b4e08dbce5d9fa53886c7ecc1a48
+Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.1.0_all.deb
+Size: 10904
+SHA256: aa1cf6d474abe0a1c545d48d11337991808d7d741ef8aa25cf01d0fd50ba50fc
+SHA1: 8b89ee5bacf13cd2ab708575f8355268d042abc6
+MD5sum: 35753330430890cd397bbebf1aaae16a
 Description: FluorineOS AMOLED Hyprland desktop environment
  FluorineOS desktop configuration for Hyprland 0.55 and later, built on a
  pure AMOLED black base with a reactive lime accent.
  .
  The package installs the native Lua compositor configuration, Waybar,
- Kitty, Fuzzel, and SwayNotificationCenter themes, hypridle and hyprlock
- OLED burn-in protection, and the flr-shot, flr-keys, and flr-doctor command
- line utilities.
+ Kitty, Fuzzel, and SwayNotificationCenter themes, the hypridle idle policy
+ and hyprlock lock screen, hardware media and brightness key bindings,
+ cliphist clipboard history, and the flr-shot, flr-keys, flr-doctor, and
+ flr-onboard command line utilities.
  .
  Configuration is installed into /etc/skel/.config so that newly created
- users receive the FluorineOS desktop on first login.
+ users receive the FluorineOS desktop on first login. The first interactive
+ login shows the keybinding cheat sheet once.
 
 Package: fluorine-keyring
 Version: 0.0.1
