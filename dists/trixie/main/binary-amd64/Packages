@@ -1,17 +1,17 @@
 Package: fluorine-artwork
-Version: 0.1.0
+Version: 0.1.1
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 81
-Depends: qt6ct
-Recommends: qt5ct, adwaita-icon-theme, dconf-cli
+Installed-Size: 86
+Depends: qt6ct, gsettings-desktop-schemas, dconf-cli, fonts-inter, fonts-jetbrains-mono
+Recommends: qt5ct, adwaita-icon-theme
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-artwork/fluorine-artwork_0.1.0_all.deb
-Size: 11024
-SHA256: ae016750f688878865b26078a62461110c56b11f0ce4da18d7792e4df58cf3ce
-SHA1: 23ce400a23d2d6d9a143294f44cc067833702a09
-MD5sum: dc0f7197b237c15dd42de39e14052ff0
+Filename: pool/main/f/fluorine-artwork/fluorine-artwork_0.1.1_all.deb
+Size: 12436
+SHA256: 67a5a5480a565d6b47f03ed6686e42c1ede52b83c20b9dd3f80140aaa68b3571
+SHA1: 0e05c3179590f4303df2d061ed02c34a450c1203
+MD5sum: 46f272c64003fe3c8aee9e0615e02c5a
 Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
  This package installs the visual assets and desktop defaults for FluorineOS,
  including:
@@ -23,6 +23,8 @@ Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
  - GTK 3 and GTK 4 dark settings with the AMOLED Void accent palette
  - qt5ct and qt6ct palettes so Qt applications match the desktop
  - dconf defaults for the dark color scheme, icon theme, and cursor size
+ - fontconfig alias so the design system UI family resolves to Inter
+ - Inter and JetBrains Mono font families referenced by every theme
  - Hyprland idle, scaling, and toolkit environment defaults are provided by
    fluorine-desktop
 
@@ -54,17 +56,17 @@ Description: FluorineOS AMOLED Hyprland desktop environment
  login shows the keybinding cheat sheet once.
 
 Package: fluorine-keyring
-Version: 0.0.1
+Version: 0.0.2
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 14
+Installed-Size: 16
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-keyring/fluorine-keyring_0.0.1_all.deb
-Size: 1752
-SHA256: 48b63fce937f0427c4e3d4f3f3141c147f50294f44e5568880bca8bbd31add4b
-SHA1: a8279401f5e92de50b9ee2c0eb67c69e7072faed
-MD5sum: 6395d1f70b1c4292946830724f011f74
+Filename: pool/main/f/fluorine-keyring/fluorine-keyring_0.0.2_all.deb
+Size: 2652
+SHA256: 50301844bc08fbf2d09885ef7c8376f79310481cb17d2e675159a9de24dbca67
+SHA1: 9b1f4869fb632c53b9b3e78e5a88661cf8974488
+MD5sum: 7b44c71662c2acb245a1b22d7fd310f8
 Description: FluorineOS APT archive keyring and source configuration
  This package installs the FluorineOS archive GPG keyring and APT source
  definition for the official FluorineOS package repository.
