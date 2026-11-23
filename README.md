@@ -27,6 +27,8 @@ package index:
 
 ```sh
 sudo apt-get update
+# fluorine-desktop needs Hyprland from trixie-backports; see the
+# fluorine-desktop README for the required APT pin
 sudo apt-get install fluorine-desktop
 ```
 
