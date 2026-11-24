@@ -29,18 +29,18 @@ Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
  - Hyprland idle, scaling, and toolkit defaults supplied by fluorine-desktop
 
 Package: fluorine-desktop
-Version: 0.6.0
+Version: 0.7.0
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 95
+Installed-Size: 109
 Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin, network-manager, bluez, blueman, power-profiles-daemon, kanshi, wdisplays, pulsemixer, pavucontrol, btrfs-progs, snapper, podman, distrobox
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.6.0_all.deb
-Size: 21984
-SHA256: 1dd1cac4cb03f4bfac0646dacb2054864a79b44266fba36571e45b51791b0037
-SHA1: bed57b070cd95c92600b813a43c30c60be5bcac7
-MD5sum: 26961f67bad2787d299acaf30f81f243
+Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.7.0_all.deb
+Size: 25288
+SHA256: bfd6a3e01ffaab8893d96c0e4b05248dc1aa26528d1b7c060d00e24c8d79d5ba
+SHA1: d430fcf1c1ad1c785136dfb05ec916f39977dd27
+MD5sum: 9334e03a1c8020c579a39236bd3e7623
 Description: FluorineOS AMOLED Hyprland desktop environment
  FluorineOS desktop configuration for Hyprland 0.55 and later, built on a
  pure AMOLED black base with a reactive lime accent.
@@ -68,6 +68,10 @@ Description: FluorineOS AMOLED Hyprland desktop environment
  reports the active profile in the Waybar badge. flr-box creates development
  containers with rootless Podman and Distrobox so toolchains stay off the host
  APT database.
+ .
+ flr-shader cycles the display between color-accurate, warm low-blue-light, and
+ grayscale shaders through the Hyprland screen_shader decoration option, and
+ restores the saved choice on the next login.
  .
  Configuration is installed into /etc/skel/.config so that newly created
  users receive the FluorineOS desktop on first login. The first interactive
