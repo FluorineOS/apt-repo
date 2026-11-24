@@ -29,18 +29,18 @@ Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
    fluorine-desktop
 
 Package: fluorine-desktop
-Version: 0.2.0
+Version: 0.3.0
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 63
-Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin, network-manager, bluez, blueman, power-profiles-daemon, kanshi, wdisplays
+Installed-Size: 73
+Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin, network-manager, bluez, blueman, power-profiles-daemon, kanshi, wdisplays, pulsemixer, pavucontrol
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.2.0_all.deb
-Size: 14172
-SHA256: 39a7fc9ff78d96e9d0958d818ac0a13fc04266b46bda192e408a25b96d7c9245
-SHA1: 38e5bd3577de590bfd3d53cceab14d3c86bf1667
-MD5sum: 3248feb729f82fb29c70e284dfa242fa
+Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.3.0_all.deb
+Size: 16476
+SHA256: 19ad8a77cee77003c3db3d8a741801fd474f96424267c2800fd86ebf00f85817
+SHA1: dfc0f3d5810d5ad660550605e25ce6b99ac64694
+MD5sum: 824fde7ee5537510dc47bf4ab3c3bb30
 Description: FluorineOS AMOLED Hyprland desktop environment
  FluorineOS desktop configuration for Hyprland 0.55 and later, built on a
  pure AMOLED black base with a reactive lime accent.
@@ -54,6 +54,11 @@ Description: FluorineOS AMOLED Hyprland desktop environment
  Hardware integration covers NetworkManager connections through nmtui, the
  Bluetooth manager, power profile cycling through power-profiles-daemon, and
  automatic external display layouts through kanshi.
+ .
+ flr-ctl provides a single keyboard-driven system menu in Fuzzel for network,
+ Bluetooth, display, audio, power, diagnostics, and session actions, and
+ flr-update refreshes APT metadata, lists incoming FluorineOS and security
+ upgrades, and reports whether a reboot is required.
  .
  Configuration is installed into /etc/skel/.config so that newly created
  users receive the FluorineOS desktop on first login. The first interactive
