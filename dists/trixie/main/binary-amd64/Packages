@@ -28,18 +28,18 @@ Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
  - Hyprland idle, scaling, and toolkit defaults supplied by fluorine-desktop
 
 Package: fluorine-desktop
-Version: 0.3.0
+Version: 0.4.0
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 73
-Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin, network-manager, bluez, blueman, power-profiles-daemon, kanshi, wdisplays, pulsemixer, pavucontrol
+Installed-Size: 83
+Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin, network-manager, bluez, blueman, power-profiles-daemon, kanshi, wdisplays, pulsemixer, pavucontrol, btrfs-progs, snapper
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.3.0_all.deb
-Size: 16476
-SHA256: 19ad8a77cee77003c3db3d8a741801fd474f96424267c2800fd86ebf00f85817
-SHA1: dfc0f3d5810d5ad660550605e25ce6b99ac64694
-MD5sum: 824fde7ee5537510dc47bf4ab3c3bb30
+Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.4.0_all.deb
+Size: 18980
+SHA256: bc7496f682aa4ba0af45b127d579017366616db317f81460ad995340d75e90d9
+SHA1: 545d13f887f437a1250a43d5aea763faeeab6f1b
+MD5sum: 59787057e1ea9400c9010e7086860705
 Description: FluorineOS AMOLED Hyprland desktop environment
  FluorineOS desktop configuration for Hyprland 0.55 and later, built on a
  pure AMOLED black base with a reactive lime accent.
@@ -57,7 +57,11 @@ Description: FluorineOS AMOLED Hyprland desktop environment
  flr-ctl provides a single keyboard-driven system menu in Fuzzel for network,
  Bluetooth, display, audio, power, diagnostics, and session actions, and
  flr-update refreshes APT metadata, lists incoming FluorineOS and security
- upgrades, and reports whether a reboot is required.
+ upgrades, and reports whether a reboot is required. On a Btrfs root it
+ creates a pre-update snapshot before applying the upgrade.
+ .
+ flr-snapshot creates, lists, and rolls back Btrfs snapshots through snapper,
+ refreshing the GRUB menu when a snapshot generator is installed.
  .
  Configuration is installed into /etc/skel/.config so that newly created
  users receive the FluorineOS desktop on first login. The first interactive
