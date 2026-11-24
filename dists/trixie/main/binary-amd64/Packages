@@ -28,18 +28,18 @@ Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
  - Hyprland idle, scaling, and toolkit defaults supplied by fluorine-desktop
 
 Package: fluorine-desktop
-Version: 0.4.0
+Version: 0.5.0
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 83
-Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin, network-manager, bluez, blueman, power-profiles-daemon, kanshi, wdisplays, pulsemixer, pavucontrol, btrfs-progs, snapper
+Installed-Size: 94
+Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin, network-manager, bluez, blueman, power-profiles-daemon, kanshi, wdisplays, pulsemixer, pavucontrol, btrfs-progs, snapper, podman, distrobox
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.4.0_all.deb
-Size: 18980
-SHA256: bc7496f682aa4ba0af45b127d579017366616db317f81460ad995340d75e90d9
-SHA1: 545d13f887f437a1250a43d5aea763faeeab6f1b
-MD5sum: 59787057e1ea9400c9010e7086860705
+Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.5.0_all.deb
+Size: 21564
+SHA256: fbf1bc2e883527a9f9e0d76caec6909f4c0c91c40a587ec1caa2fa551c88c24a
+SHA1: a23b2cc8fbf3345cc8ea642cc9a12cc0c5e9d940
+MD5sum: 91d53b91cc82aa011dc318ec75b09d9d
 Description: FluorineOS AMOLED Hyprland desktop environment
  FluorineOS desktop configuration for Hyprland 0.55 and later, built on a
  pure AMOLED black base with a reactive lime accent.
@@ -62,6 +62,11 @@ Description: FluorineOS AMOLED Hyprland desktop environment
  .
  flr-snapshot creates, lists, and rolls back Btrfs snapshots through snapper,
  refreshing the GRUB menu when a snapshot generator is installed.
+ .
+ flr-mode switches between work, focus, and present workstation profiles and
+ reports the active profile in the Waybar badge. flr-box creates development
+ containers with rootless Podman and Distrobox so toolchains stay off the host
+ APT database.
  .
  Configuration is installed into /etc/skel/.config so that newly created
  users receive the FluorineOS desktop on first login. The first interactive
