@@ -1,17 +1,17 @@
 Package: fluorine-artwork
-Version: 0.1.3
+Version: 0.3.0
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 86
+Installed-Size: 90
 Depends: qt6ct, gsettings-desktop-schemas, dconf-cli, fonts-inter, fonts-jetbrains-mono
 Recommends: qt5ct, adwaita-icon-theme
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-artwork/fluorine-artwork_0.1.3_all.deb
-Size: 12528
-SHA256: 7b82f301c6035d996fc8d35f466ebf5d24023c6dcb088229d27ab8dafc997b63
-SHA1: 9be60aa4838a166cc3cec4576650845c47f2fd66
-MD5sum: 2bfa54afcfac380077b7c133359056e8
+Filename: pool/main/f/fluorine-artwork/fluorine-artwork_0.3.0_all.deb
+Size: 13080
+SHA256: b79646e842956a1b66deb42c41f745a2b8242704075aedec62e8a414ece8e090
+SHA1: 0197216255ee8ed461a1943206fdef073c48bf28
+MD5sum: 1a98b26e61bed3c8a0c713192de7d870
 Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
  This package installs the visual assets and desktop defaults for FluorineOS,
  including:
@@ -25,8 +25,7 @@ Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
  - dconf defaults for the dark color scheme, icon theme, and cursor size
  - fontconfig alias so the design system UI family resolves to Inter
  - Inter and JetBrains Mono font families referenced by every theme
- - Hyprland idle, scaling, and toolkit environment defaults are provided by
-   fluorine-desktop
+ - Hyprland idle, scaling, and toolkit defaults supplied by fluorine-desktop
 
 Package: fluorine-desktop
 Version: 0.3.0
