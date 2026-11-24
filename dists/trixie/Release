@@ -1,19 +1,19 @@
 Origin: FluorineOS
 Label: FluorineOS APT Repository
 Codename: trixie
-Date: Tue, 24 Nov 2026 17:29:27 UTC
+Date: Tue, 24 Nov 2026 17:43:02 UTC
 Architectures: amd64
 Components: main
 Description: Official packages for FluorineOS 0.0.1+
 MD5Sum:
- 549ff6baad67e4d7979ff4962d528760 4469 main/binary-amd64/Packages
- a33316e5efc79b860a798c786c6da45d 2126 main/binary-amd64/Packages.gz
+ 6427660526b67188aaa1d2975d91c594 4469 main/binary-amd64/Packages
+ 5eae4e2a37a130faa8a5846eed95073d 2125 main/binary-amd64/Packages.gz
  c6c270602516accd106ee66e76b56918 141 main/binary-amd64/Release
 SHA1:
- 075a2fd814c1b9e1f1c09d65a4ff374352ed3594 4469 main/binary-amd64/Packages
- 83c543814ae6110fb1b83b47a9f7db6b1b49699a 2126 main/binary-amd64/Packages.gz
+ 85ce067cc38d28090e3ad79d70c642a5d4f946ea 4469 main/binary-amd64/Packages
+ 6f149fee02339543946aa123079a01560da4762a 2125 main/binary-amd64/Packages.gz
  90ad8d84d1d461df7a03f96a08918c32dc67b263 141 main/binary-amd64/Release
 SHA256:
- 827432cd686e51bce42935618ed85522ce5af48640dc02a4db7ea947c36d79c4 4469 main/binary-amd64/Packages
- f19fe811b7c1c7e9e3fcc044d9cb8a7126ddea0e16a2069a8df6d0fd32f2a3e8 2126 main/binary-amd64/Packages.gz
+ 276042c388f948fdc178d2464a25d728f3579c54eca008f6b33dc8a83970daf2 4469 main/binary-amd64/Packages
+ ece9be34090db086bafcb9f717a825f6c2325f649f51786a91c58ac014f956d9 2125 main/binary-amd64/Packages.gz
  4d606b50ce895a73e8b731afcba97e4de904ad829e264329b80e463a7a2bd48d 141 main/binary-amd64/Release
