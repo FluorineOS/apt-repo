@@ -1,17 +1,17 @@
 Package: fluorine-artwork
-Version: 0.3.0
+Version: 0.3.1
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 90
+Installed-Size: 91
 Depends: qt6ct, gsettings-desktop-schemas, dconf-cli, fonts-inter, fonts-jetbrains-mono
 Recommends: qt5ct, adwaita-icon-theme
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-artwork/fluorine-artwork_0.3.0_all.deb
-Size: 13080
-SHA256: b79646e842956a1b66deb42c41f745a2b8242704075aedec62e8a414ece8e090
-SHA1: 0197216255ee8ed461a1943206fdef073c48bf28
-MD5sum: 1a98b26e61bed3c8a0c713192de7d870
+Filename: pool/main/f/fluorine-artwork/fluorine-artwork_0.3.1_all.deb
+Size: 13128
+SHA256: 1253ed6c41f01fc7ccdf63ece2e1cd20683dabd0b7c5e0f70e9ab701a2f3234d
+SHA1: fd260e80d7dd4741a249d163aee9d827443cab3e
+MD5sum: 05b2f64076070653094a05d6fd34843e
 Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
  This package installs the visual assets and desktop defaults for FluorineOS,
  including:
