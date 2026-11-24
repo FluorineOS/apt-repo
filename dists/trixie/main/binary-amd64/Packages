@@ -29,18 +29,18 @@ Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
    fluorine-desktop
 
 Package: fluorine-desktop
-Version: 0.1.2
+Version: 0.2.0
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 53
-Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin
+Installed-Size: 63
+Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin, network-manager, bluez, blueman, power-profiles-daemon, kanshi, wdisplays
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.1.2_all.deb
-Size: 11816
-SHA256: 69525e872e2cc5e1b322c751b0d94e15dddafafcd7d9633bf25ec0d6592153c1
-SHA1: 0bae8e2fa26ffe2f37a5d1f21e8a8f375e8d544b
-MD5sum: 0a3fae8e112a07ac679162f33d9f1d25
+Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.2.0_all.deb
+Size: 14172
+SHA256: 39a7fc9ff78d96e9d0958d818ac0a13fc04266b46bda192e408a25b96d7c9245
+SHA1: 38e5bd3577de590bfd3d53cceab14d3c86bf1667
+MD5sum: 3248feb729f82fb29c70e284dfa242fa
 Description: FluorineOS AMOLED Hyprland desktop environment
  FluorineOS desktop configuration for Hyprland 0.55 and later, built on a
  pure AMOLED black base with a reactive lime accent.
@@ -50,6 +50,10 @@ Description: FluorineOS AMOLED Hyprland desktop environment
  and hyprlock lock screen, hardware media and brightness key bindings,
  cliphist clipboard history, and the flr-shot, flr-keys, flr-doctor, and
  flr-onboard command line utilities.
+ .
+ Hardware integration covers NetworkManager connections through nmtui, the
+ Bluetooth manager, power profile cycling through power-profiles-daemon, and
+ automatic external display layouts through kanshi.
  .
  Configuration is installed into /etc/skel/.config so that newly created
  users receive the FluorineOS desktop on first login. The first interactive
