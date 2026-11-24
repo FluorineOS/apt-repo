@@ -1,23 +1,24 @@
 Package: fluorine-artwork
-Version: 0.3.3
+Version: 0.4.0
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 91
+Installed-Size: 121
 Depends: qt6ct, gsettings-desktop-schemas, dconf-cli, fonts-inter, fonts-jetbrains-mono
 Recommends: qt5ct, adwaita-icon-theme
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-artwork/fluorine-artwork_0.3.3_all.deb
-Size: 13292
-SHA256: be791de561aee473776c6b5175bdcb80e4937dc0091ea8e23214c5291f053700
-SHA1: cc0a93540df29f55accc966dc529975739e762fb
-MD5sum: 73c8d12813241ba8acbe7a042ae8c200
+Filename: pool/main/f/fluorine-artwork/fluorine-artwork_0.4.0_all.deb
+Size: 20316
+SHA256: b59d0e7c1c0862c8ff9b6711cf46fe69070573701886b8fd710f2939a16f869b
+SHA1: 4ecc07db45050506b99e6dc16e8041ab1a98bd27
+MD5sum: 91ddc2413e2f9ea51a60e4bfedad0f16
 Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
  This package installs the visual assets and desktop defaults for FluorineOS,
  including:
  .
  - AMOLED 3840x2160 SVG wallpapers for the OLED Void design language
  - Plymouth boot splash theme using the script plugin
+ - GRUB2 boot menu theme with a lime selected-entry frame
  - fastfetch ASCII logo and JSONC configuration
  - Calamares installer branding, QML slideshow, and stylesheet
  - GTK 3 and GTK 4 dark settings with the AMOLED Void accent palette
@@ -28,18 +29,18 @@ Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
  - Hyprland idle, scaling, and toolkit defaults supplied by fluorine-desktop
 
 Package: fluorine-desktop
-Version: 0.5.0
+Version: 0.6.0
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 94
+Installed-Size: 95
 Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin, network-manager, bluez, blueman, power-profiles-daemon, kanshi, wdisplays, pulsemixer, pavucontrol, btrfs-progs, snapper, podman, distrobox
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.5.0_all.deb
-Size: 21564
-SHA256: fbf1bc2e883527a9f9e0d76caec6909f4c0c91c40a587ec1caa2fa551c88c24a
-SHA1: a23b2cc8fbf3345cc8ea642cc9a12cc0c5e9d940
-MD5sum: 91d53b91cc82aa011dc318ec75b09d9d
+Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.6.0_all.deb
+Size: 21984
+SHA256: 1dd1cac4cb03f4bfac0646dacb2054864a79b44266fba36571e45b51791b0037
+SHA1: bed57b070cd95c92600b813a43c30c60be5bcac7
+MD5sum: 26961f67bad2787d299acaf30f81f243
 Description: FluorineOS AMOLED Hyprland desktop environment
  FluorineOS desktop configuration for Hyprland 0.55 and later, built on a
  pure AMOLED black base with a reactive lime accent.
