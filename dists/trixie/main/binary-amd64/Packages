@@ -1,17 +1,17 @@
 Package: fluorine-artwork
-Version: 0.6.0
+Version: 0.7.0
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 889
+Installed-Size: 1087
 Depends: qt6ct, gsettings-desktop-schemas, dconf-cli, fonts-inter, fonts-jetbrains-mono
 Recommends: qt5ct, adwaita-icon-theme
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-artwork/fluorine-artwork_0.6.0_all.deb
-Size: 681096
-SHA256: a1bbe5efd0a8c71fd90621e5608eadb3c74fae44639027b412d88a7c17bc3ae3
-SHA1: f37678af40309a7a66e5569ecd634e0d14fcecfc
-MD5sum: bd3cfcc29284ea0d2ba4299a532b16de
+Filename: pool/main/f/fluorine-artwork/fluorine-artwork_0.7.0_all.deb
+Size: 771772
+SHA256: 1890fc2de8033bd786592a22ad62f4d538260846e825c6c1a5022b4a09adbf71
+SHA1: 6d65ae3026e7943d5d7a4dafa12785ed8500bf8d
+MD5sum: 09642409c4224d1a2e83811cac60bbef
 Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
  This package installs the visual assets and desktop defaults for FluorineOS,
  including:
@@ -30,7 +30,7 @@ Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
  - Hyprland idle, scaling, and toolkit defaults supplied by fluorine-desktop
 
 Package: fluorine-desktop
-Version: 0.11.0
+Version: 0.12.0
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
 Installed-Size: 193
@@ -38,11 +38,11 @@ Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-
 Recommends: fluorine-artwork
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.11.0_all.deb
-Size: 43764
-SHA256: 9fd19f39bf4228115bb1967f360d72a207c0e3f3f42c5290609cdc2ab8efab88
-SHA1: aac1855d3a57c74338bac824017f8b95e9162ab0
-MD5sum: e4275e40d91b23fe8eca809bb7e622cb
+Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.12.0_all.deb
+Size: 43900
+SHA256: bd4075d72ea84f39fa31e4601b511244c17b3a490f0f34d0e146ae511bcc9044
+SHA1: ffe65151d4e8f9f7ddb4504f405cdd7878156bb5
+MD5sum: 8446c13fa9228b5f0df13df9a108126d
 Description: FluorineOS AMOLED Hyprland desktop environment
  FluorineOS desktop configuration for Hyprland 0.55 and later, built on a
  pure AMOLED black base with a reactive lime accent.
