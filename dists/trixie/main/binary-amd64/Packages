@@ -30,19 +30,19 @@ Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
  - Hyprland idle, scaling, and toolkit defaults supplied by fluorine-desktop
 
 Package: fluorine-desktop
-Version: 0.8.0
+Version: 0.9.0
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 118
-Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin, network-manager, bluez, blueman, power-profiles-daemon, kanshi, wdisplays, pulsemixer, pavucontrol, btrfs-progs, snapper, podman, distrobox
+Installed-Size: 174
+Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin, network-manager, bluez, blueman, power-profiles-daemon, kanshi, wdisplays, pulsemixer, pavucontrol, btrfs-progs, snapper, podman, distrobox, python3, python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1
 Recommends: fluorine-artwork
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.8.0_all.deb
-Size: 27076
-SHA256: bbc2e7b77c518be9dee72da7e00d8046f7d9ee8d245d33d10b123ae4cf48a625
-SHA1: a703a7455438f3872ab4bf803072fc85fcb95328
-MD5sum: 254f172d19ff9d3baabd5351e1ab5efd
+Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.9.0_all.deb
+Size: 38928
+SHA256: 592a70f1e2b6387df846c0fbbc760f7fd7f688fac0bd2bad0b565c3a33b33921
+SHA1: 832bc5d05d647372d896af4970819a4e726e25f2
+MD5sum: 4740272dc157e486b4d0bd73c0a0dce2
 Description: FluorineOS AMOLED Hyprland desktop environment
  FluorineOS desktop configuration for Hyprland 0.55 and later, built on a
  pure AMOLED black base with a reactive lime accent.
@@ -78,6 +78,16 @@ Description: FluorineOS AMOLED Hyprland desktop environment
  flr-wall switches the desktop wallpaper from the shipped 4K set or from
  ~/Pictures/Wallpapers, remembers the choice across logins, and keeps the
  hyprlock lock screen background in step with it.
+ .
+ flr-settings is a native GTK4 and libadwaita control panel with a two-pane
+ navigation layout. It covers wallpapers, the display shader, window gaps and
+ border width, the workstation profile, the idle lock timeout, the first-login
+ cheat sheet, live monitor state and scale, network and Bluetooth status with
+ direct launchers, power profiles, default sink and source volume, and the
+ OS, memory, ZRAM, and Btrfs snapshot summary. Every control delegates to the
+ matching flr-* command, so the panel and the keyboard workflow share one
+ state. flr-config owns the editable state in ~/.config/fluorine/config.lua
+ and applies it to Hyprland and hypridle.
  .
  Configuration is installed into /etc/skel/.config so that newly created
  users receive the FluorineOS desktop on first login. The first interactive
