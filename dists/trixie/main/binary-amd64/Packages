@@ -30,19 +30,19 @@ Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
  - Hyprland idle, scaling, and toolkit defaults supplied by fluorine-desktop
 
 Package: fluorine-desktop
-Version: 0.10.0
+Version: 0.11.0
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 178
+Installed-Size: 193
 Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin, network-manager, bluez, blueman, power-profiles-daemon, kanshi, wdisplays, pulsemixer, pavucontrol, btrfs-progs, snapper, podman, distrobox, thunar, thunar-volman, thunar-archive-plugin, tumbler, gvfs, gvfs-backends, file-roller, unzip, zip, xz-utils, swayimg, zathura, zathura-pdf-poppler, mousepad, galculator, btop, xdg-user-dirs, python3, python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1
 Recommends: fluorine-artwork
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.10.0_all.deb
-Size: 40392
-SHA256: fcb4e4b268f80e1c0dd0bc67bb9b6207bf4fcbf5d0cd9eb231c420452c74b6fa
-SHA1: 1d6e60909e4c1028eff21a1b0441957f0e5ef87f
-MD5sum: 90805c6dd5c8aadcd0ce0009fd81a2e9
+Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.11.0_all.deb
+Size: 43764
+SHA256: 9fd19f39bf4228115bb1967f360d72a207c0e3f3f42c5290609cdc2ab8efab88
+SHA1: aac1855d3a57c74338bac824017f8b95e9162ab0
+MD5sum: e4275e40d91b23fe8eca809bb7e622cb
 Description: FluorineOS AMOLED Hyprland desktop environment
  FluorineOS desktop configuration for Hyprland 0.55 and later, built on a
  pure AMOLED black base with a reactive lime accent.
