@@ -1,17 +1,17 @@
 Package: fluorine-artwork
-Version: 0.5.0
+Version: 0.6.0
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 885
+Installed-Size: 889
 Depends: qt6ct, gsettings-desktop-schemas, dconf-cli, fonts-inter, fonts-jetbrains-mono
 Recommends: qt5ct, adwaita-icon-theme
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-artwork/fluorine-artwork_0.5.0_all.deb
-Size: 680356
-SHA256: 9ce8bd90416288dd771704f71b55e0ad79359dca3e92a03e5435d9263674a0ca
-SHA1: 51f84ff70256d95b926aea010cd78efe27657f4f
-MD5sum: 115b1c1fbc8d519b3508a2cd85b4bb1d
+Filename: pool/main/f/fluorine-artwork/fluorine-artwork_0.6.0_all.deb
+Size: 681096
+SHA256: a1bbe5efd0a8c71fd90621e5608eadb3c74fae44639027b412d88a7c17bc3ae3
+SHA1: f37678af40309a7a66e5569ecd634e0d14fcecfc
+MD5sum: bd3cfcc29284ea0d2ba4299a532b16de
 Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
  This package installs the visual assets and desktop defaults for FluorineOS,
  including:
@@ -30,19 +30,19 @@ Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
  - Hyprland idle, scaling, and toolkit defaults supplied by fluorine-desktop
 
 Package: fluorine-desktop
-Version: 0.9.0
+Version: 0.10.0
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 174
-Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin, network-manager, bluez, blueman, power-profiles-daemon, kanshi, wdisplays, pulsemixer, pavucontrol, btrfs-progs, snapper, podman, distrobox, python3, python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1
+Installed-Size: 178
+Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin, network-manager, bluez, blueman, power-profiles-daemon, kanshi, wdisplays, pulsemixer, pavucontrol, btrfs-progs, snapper, podman, distrobox, thunar, thunar-volman, thunar-archive-plugin, tumbler, gvfs, gvfs-backends, file-roller, unzip, zip, xz-utils, swayimg, zathura, zathura-pdf-poppler, mousepad, galculator, btop, xdg-user-dirs, python3, python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1
 Recommends: fluorine-artwork
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.9.0_all.deb
-Size: 38928
-SHA256: 592a70f1e2b6387df846c0fbbc760f7fd7f688fac0bd2bad0b565c3a33b33921
-SHA1: 832bc5d05d647372d896af4970819a4e726e25f2
-MD5sum: 4740272dc157e486b4d0bd73c0a0dce2
+Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.10.0_all.deb
+Size: 40392
+SHA256: fcb4e4b268f80e1c0dd0bc67bb9b6207bf4fcbf5d0cd9eb231c420452c74b6fa
+SHA1: 1d6e60909e4c1028eff21a1b0441957f0e5ef87f
+MD5sum: 90805c6dd5c8aadcd0ce0009fd81a2e9
 Description: FluorineOS AMOLED Hyprland desktop environment
  FluorineOS desktop configuration for Hyprland 0.55 and later, built on a
  pure AMOLED black base with a reactive lime accent.
@@ -88,6 +88,15 @@ Description: FluorineOS AMOLED Hyprland desktop environment
  matching flr-* command, so the panel and the keyboard workflow share one
  state. flr-config owns the editable state in ~/.config/fluorine/config.lua
  and applies it to Hyprland and hypridle.
+ .
+ The daily-driver utilities follow the same palette: Thunar with volume and
+ archive plugins plus Tumbler thumbnails, File Roller for zip, tar, and 7z
+ archives, swayimg as the Wayland image viewer, Zathura with Poppler for
+ recolored dark PDF viewing, Mousepad for plain text, and galculator as a
+ floating calculator. Default MIME handlers in /etc/xdg/mimeapps.list and
+ /etc/skel/.config/mimeapps.list route directories, images, documents, and
+ archives to those applications, and xdg-user-dirs-update runs at session
+ start so the standard home folders exist for the Thunar sidebar.
  .
  Configuration is installed into /etc/skel/.config so that newly created
  users receive the FluorineOS desktop on first login. The first interactive
