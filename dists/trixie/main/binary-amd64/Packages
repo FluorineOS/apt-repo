@@ -31,19 +31,19 @@ Description: FluorineOS artwork, wallpapers, and unified toolkit defaults
   - Hyprland idle, scaling, and toolkit defaults supplied by fluorine-desktop
 
 Package: fluorine-desktop
-Version: 0.13.0
+Version: 0.14.0
 Architecture: all
 Maintainer: gowthvm <gowthamgkofficial@gmail.com>
-Installed-Size: 195
-Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin, network-manager, bluez, blueman, power-profiles-daemon, kanshi, wdisplays, pulsemixer, pavucontrol, btrfs-progs, snapper, podman, distrobox, thunar, thunar-volman, thunar-archive-plugin, tumbler, gvfs, gvfs-backends, file-roller, unzip, zip, xz-utils, swayimg, zathura, zathura-pdf-poppler, mousepad, galculator, btop, xdg-user-dirs, python3, python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1
+Installed-Size: 220
+Depends: hyprland, hypridle, hyprlock, waybar, kitty, fuzzel, sway-notification-center, swaybg, grim, slurp, wl-clipboard, cliphist, brightnessctl, wireplumber, jq, libnotify-bin, network-manager, bluez, blueman, power-profiles-daemon, kanshi, wdisplays, pulsemixer, pavucontrol, btrfs-progs, snapper, podman, distrobox, thunar, thunar-volman, thunar-archive-plugin, tumbler, gvfs, gvfs-backends, file-roller, unzip, zip, xz-utils, swayimg, zathura, zathura-pdf-poppler, mousepad, galculator, btop, xdg-user-dirs, python3, python3-gi, gir1.2-gtk-4.0, gir1.2-adw-1, flatpak
 Recommends: fluorine-artwork
 Priority: optional
 Section: misc
-Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.13.0_all.deb
-Size: 44804
-SHA256: ab8a5d553e2be520b39456ba4f3d0a1606dfc8464a97286f0df04d00439716b7
-SHA1: 5061fe4fcd0256f4cb80d38f74afd1ecb008518d
-MD5sum: b71be4bbb88d85e63ae25083d5438678
+Filename: pool/main/f/fluorine-desktop/fluorine-desktop_0.14.0_all.deb
+Size: 47868
+SHA256: f05d0483e24ff5c57e5bfff4631b3a8a30567b29b0892a26fa2431e1ffdce975
+SHA1: 20f96ce9033b018ed53794f67fc3d38c25187cbb
+MD5sum: b18775002c26c8ebcdb0535946042dc4
 Description: FluorineOS AMOLED Hyprland desktop environment
  FluorineOS desktop configuration for Hyprland 0.55 and later, built on a
  pure AMOLED black base with a reactive lime accent.
@@ -57,6 +57,11 @@ Description: FluorineOS AMOLED Hyprland desktop environment
  Waybar pairs its status modules with the Fluorine icon theme, Fuzzel draws
  the same icons in its application and action menus, and the settings panel
  uses the symbolic variants so GTK can recolor them for each row state.
+ .
+ flr-store is a curated application hub that groups verified developer tools,
+ browsers, and media software into Development, Web, Multimedia, and System
+ Utilities categories, and installs them through apt, Flatpak, or a flr-box
+ container.
  .
  Hardware integration covers NetworkManager connections through nmtui, the
  Bluetooth manager, power profile cycling through power-profiles-daemon, and
